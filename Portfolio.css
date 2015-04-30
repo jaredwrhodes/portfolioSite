@@ -1,0 +1,73 @@
+.nav-font {
+	color: white;
+	font-size: 14pt;
+	font-family: helvetica;
+}
+
+
+.banner-style{
+	background-image: url("http://www.seetorontonow.com/App_Themes/tourismtoronto/images/about-tourism-toronto.jpg");
+	-webkit-background-size: cover;
+		-ms-background-size: cover;
+			-moz-background-size: cover;
+				-o-background-size: cover;
+	background-size: cover;
+	color: white;
+	text-align: center;
+	height: 640px;
+	width: 100%;
+	background-repeat: no-repeat;
+	margin-bottom: 0px;
+
+}
+
+.projectText{
+	color: white;
+}
+
+.banner-text{
+	padding-top: 150px;
+}
+
+.signup-button{
+	background-color: #028cb0;
+	color: white;
+}
+
+.div2-home{
+	background-color: #028cb0;
+	height: 800px;
+	text-align: center;
+	font-family: helvetica;
+	color: black;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: relative;
+	top: 0px;
+}
+
+.thumbnails{
+	height: 350px;
+}
+
+.learnMore-btn{
+	background-color: #028cb0;
+	color: white;
+}
+
+.handsOnly-Vid{
+	text-align: center;
+
+}
+
+.footer{
+	background-color: #525454;
+	color: white;
+	padding-top: 30px;
+	padding-bottom: 20px;
+}
+
+.twitterTL{
+	height: 100px;
+	width: 100px;
+}
