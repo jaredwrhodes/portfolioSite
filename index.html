@@ -2,45 +2,25 @@
 <html>
 	<head>
 		<title>Jared Rhodes | Web Developer</title>
-		
+		<link rel="stylesheet" type="text/css" href="font-awesome-4.3.0/css/font-awesome.css">
+		<!--Stylesheets-->
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
 		<!-- Optional theme -->
 		<link href="bootstrap/css" rel="stylesheet" >
-	
+		
 		<link rel="stylesheet" type="text/css" href="css/Portfolio.css">
+		
+		<!--JavaScript-->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>		
 
-	<!--facebook share button script-->	
-		<script>(function(d, s, id) {
-  		var js, fjs = d.getElementsByTagName(s)[0];
-  		if (d.getElementById(id)) return;
-  		js = d.createElement(s); js.id = id;
-  		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-  		fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
 
 	</head>
 
 	<body>
-<!--Facebook Share button script-->
-	<script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : 'your-app-id',
-          xfbml      : true,
-          version    : 'v2.1'
-        });
-      };
-
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-    </script>
 
 <!--NavBar-->
 		<header id="mainMenu" class="navbar navbar-inverse navbar-fixed-top hero" role="banner">
@@ -102,11 +82,11 @@
         						<p><a href="#" class="btn learnMore-btn" role="button">See More</a></p>
       						</div>
     				</div>
-		  			</div>
+		  		</div>
 
-		  				<div class="col-sm-6 col-md-4">
+		  			<div class="col-sm-6 col-md-4">
 		    			<div class="thumbnail thumbnails">
-		     	 			<img data-src="holder.js/300x300" alt="Project1 Picture" src="">
+		     	 			<img data-src="holder.js/300x300" alt="Project2 Picture" src="">
 		     					<div class="caption">
 		        					<h3>Other Project</h3>
 		        					<p></p>
@@ -115,9 +95,9 @@
 		    			</div>
 		  			</div>
 
-		  				<div class="col-sm-6 col-md-4">
+		  			<div class="col-sm-6 col-md-4">
 		    			<div class="thumbnail thumbnails">
-		     	 			<img data-src="holder.js/300x300" alt="Project2 Picture" src="">
+		     	 			<img data-src="holder.js/300x300" alt="Project3 Picture" src="">
 		     					<div class="caption">
 		        					<h3>Other Project 2</h3>
 		        					<p></p>
@@ -138,7 +118,7 @@
         						<p><a href="#" class="btn learnMore-btn" role="button">See More</a></p>
       						</div>
     				</div>
-		  			</div>
+		  		</div>
 
 		  				<div class="col-sm-6 col-md-4">
 		    			<div class="thumbnail thumbnails">
@@ -151,7 +131,7 @@
 		    			</div>
 		  			</div>
 
-		  				<div class="col-sm-6 col-md-4">
+		  			<div class="col-sm-6 col-md-4">
 		    			<div class="thumbnail thumbnails">
 		     	 			<img data-src="holder.js/300x300" alt="Project2 Picture" src="">
 		     					<div class="caption">
@@ -162,26 +142,71 @@
 		    			</div>
 		  			</div>
 
-				</div>
+			</div>
 		
 		</div>
 
+<!--Contact me information/google map api-->
+		<div class="contactDiv row">
+			
+			<div class="row">
+				<div id="map" style="height:400px;" class="col-sm-12">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.4589904291374!2d-77.5592659!3d37.35531499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b10ad30bccffbd%3A0x73fae4516271f393!2s9341+Squirrel+Tree+Ct%2C+Chesterfield%2C+VA+23838!5e0!3m2!1sen!2sus!4v1430451814858" width="100%" height="400" frameborder="0" style="border:0"></iframe>
+				</div>
+			</div>
 
+			<br><br>
+
+			<div class="row">
+				<div class="col-sm-4 col-sm-offset-2 bioPic">
+					<img src="assets/Bio.jpg" class="picturebio">
+						<div >
+							<a href="https://www.facebook.com/jared.rhodes.359">
+								<i class="fa fa-facebook-square facebook"></i>
+							</a>
+							<a href="https://twitter.com/jaredwrhodes">
+								<i class="fa fa-twitter-square twitter"></i>
+							</a>
+							<a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile">
+								<i class="fa fa-linkedin-square linkedin"></i>
+							</a>
+						</div>
+				</div>
+				<div class="col-sm-3 col-sm-offset-1 ">
+					<h3><u>PHONE</u></h3>
+					<h5>(804) 517-9080</h5>
+				</div>
+				<div class="col-sm-3 col-sm-offset-1">
+					<h3><u>EMAIL</u></h3>
+					<h5>jared@worldtechacademy.com</h5>
+				</div>
+				<div class="col-sm-3 col-sm-offset-1">
+					<h3><u>ADDRESS</u></h3>
+					<h5>9341 Squirrel Tree Ct.</h5>
+					<h5>Chesterfield, VA 23838</h5>
+				</div>
+			</div>
+		</div>
+
+
+	
 <!--footer-->		
 	<div class="footer">
-		<div class="container">
-			<div class="row credits">
-				<div class="col-sm-4 col-sm-offset-3">
-					Copyright &copy; 2014. Jared Rhodes, all rights reserved.
+		<div class="row">
+			<div class="container">
+				<div class="credits">
+					<div class="col-sm-4 col-sm-offset-3">
+						Copyright &copy; 2014. Jared Rhodes, all rights reserved.
+					</div>
+					<div class="col-sm-1">
+						<a href="resume2015.pdf"><u>Resume</u></a>
+					</div>
+					<div class="col-sm-1">
+						<a href="https://github.com/jaredwrhodes"><u>GitHub</u></a>
+					</div>
 				</div>
-				<div class="col-sm-1">
-					<a href="#"><u>Resume</u></a>
-				</div>
-				<div class="col-sm-1">
-					<a href="#"><u>GitHub</u></a>
-				</div>
-				
-			</div>	
+		</div>			
+			
 					
 			
 				</div>
@@ -197,8 +222,8 @@
 		</div>
 	</div>
 		
-		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>	
+		
+		
 	</body>
 </html>
 

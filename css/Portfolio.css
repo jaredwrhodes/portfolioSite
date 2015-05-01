@@ -6,7 +6,7 @@
 
 
 .banner-style{
-	background-image: url("http://www.seetorontonow.com/App_Themes/tourismtoronto/images/about-tourism-toronto.jpg");
+	background-image: url("http://arunaproject.com/wp-content/uploads/2014/07/Richmond-VA-2.jpg");
 	-webkit-background-size: cover;
 		-ms-background-size: cover;
 			-moz-background-size: cover;
@@ -35,7 +35,7 @@
 }
 
 .div2-home{
-	background-color: #028cb0;
+	background-color: #E0E0FF;
 	height: 800px;
 	text-align: center;
 	font-family: helvetica;
@@ -58,6 +58,42 @@
 .handsOnly-Vid{
 	text-align: center;
 
+}
+
+.contactDiv {
+	background-color: white;
+	color: black;
+}
+
+
+.bioPic {
+	padding-bottom: 40px;
+	position: relative;
+	height: 311px;
+}
+
+.facebook{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	color: black;
+}
+
+.twitter {
+	position: absolute;
+	bottom: 20px;
+	left: 60px;
+	color: black;
+}
+
+.linkedin{
+	position: absolute;
+	bottom: 20px;
+	left: 100px;
+	color: black;
+}
+.picturebio {
+	position: absolute;
 }
 
 .footer{
