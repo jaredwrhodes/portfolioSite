@@ -21,10 +21,15 @@ $(document).ready( function () {
     var projectArray = [cpr, cms];
 
     function processArray(project){
+        var aTag = document.createElement("a");
+        aTag.setAttribute('href',project.link);
+        aTag.id = project.title + '-' + 'link';
+        document.getElementById('firstRow').appendChild(aTag);
+
         var outerDIV = document.createElement("div");
-        outerDIV.className = 'col-md-4';
+        outerDIV.className = 'col-md-4 hvr-float-shadow';
         outerDIV.id = project.title + '-' + 'outer';
-        document.getElementById('firstRow').appendChild(outerDIV);
+        document.getElementById(project.title + '-' +'link').appendChild(outerDIV);
 
         var middleDIV = document.createElement("div");
         middleDIV.className = 'thumbnail';
@@ -33,6 +38,7 @@ $(document).ready( function () {
 
         var imgTag = document.createElement("img");
         imgTag.src = project.imgRef;
+        imgTag.className = 'thumbnailimg';
         imgTag.id = project.title + '-' + 'img';
         //imgTag.setAttribute("data-src", "holder.js/360x270");
         document.getElementById(project.title + '-' +'middle').appendChild(imgTag);
@@ -40,14 +46,18 @@ $(document).ready( function () {
         var innerDIV = document.createElement("div");
         innerDIV.className = 'caption';
         innerDIV.id = project.title + '-' + 'inner';
-        innerDIV.innerHTML = '<h3>' + project.title + '</h3>';
+        innerDIV.innerHTML = '<h3>' + project.title + '</h3>' +
+             '<p>' + project.description + '</p>' +
+            "<a href='" + project.link + "'class='btn btn-primary'>Find Out More</a>";
         document.getElementById(project.title + '-' +'middle').appendChild(innerDIV);
 
         document.getElementById(project.title + '-' +'outer').addEventListener("mouseover", function(){
            var el = document.getElementById(project.title + '-' +'inner').className = "caption2";
+           var el2 = document.getElementById(project.title + '-' +'img').className = "thumbnailHover";
         });
         document.getElementById(project.title + '-' +'outer').addEventListener("mouseout", function(){
            var el = document.getElementById(project.title + '-' +'inner').className = "caption";
+           var el2 = document.getElementById(project.title + '-' +'img').className = "thumbnailimg";
         });
     }
     projectArray.forEach(processArray);
