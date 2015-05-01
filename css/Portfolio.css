@@ -65,8 +65,35 @@
 	color: black;
 }
 
+
 .bioPic {
 	padding-bottom: 40px;
+	position: relative;
+	height: 311px;
+}
+
+.facebook{
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	color: black;
+}
+
+.twitter {
+	position: absolute;
+	bottom: 20px;
+	left: 60px;
+	color: black;
+}
+
+.linkedin{
+	position: absolute;
+	bottom: 20px;
+	left: 100px;
+	color: black;
+}
+.picturebio {
+	position: absolute;
 }
 
 .footer{
