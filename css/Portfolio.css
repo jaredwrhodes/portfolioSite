@@ -35,7 +35,7 @@
 }
 
 .div2-home{
-	background-color: #028cb0;
+	background-color: #E0E0FF;
 	height: 800px;
 	text-align: center;
 	font-family: helvetica;
@@ -58,6 +58,15 @@
 .handsOnly-Vid{
 	text-align: center;
 
+}
+
+.contactDiv {
+	background-color: white;
+	color: black;
+}
+
+.bioPic {
+	padding-bottom: 40px;
 }
 
 .footer{
