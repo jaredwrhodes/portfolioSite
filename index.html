@@ -3,6 +3,7 @@
 	<head>
 		<title>Jared Rhodes | Web Developer</title>
 		
+		<!--Stylesheets-->
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
@@ -11,36 +12,14 @@
 	
 		<link rel="stylesheet" type="text/css" href="css/Portfolio.css">
 
-	<!--facebook share button script-->	
-		<script>(function(d, s, id) {
-  		var js, fjs = d.getElementsByTagName(s)[0];
-  		if (d.getElementById(id)) return;
-  		js = d.createElement(s); js.id = id;
-  		js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-  		fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
+	<!--JavaScript-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>		
 
 	</head>
 
 	<body>
-<!--Facebook Share button script-->
-	<script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : 'your-app-id',
-          xfbml      : true,
-          version    : 'v2.1'
-        });
-      };
-
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-    </script>
 
 <!--NavBar-->
 		<header id="mainMenu" class="navbar navbar-inverse navbar-fixed-top hero" role="banner">
@@ -166,7 +145,38 @@
 		
 		</div>
 
+<!--Contact me information/google map api-->
+		<div>
+			
+			<div id="map" style="height:400px;">
 
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3044.7943527181187!2d-111.6632104!3d40.2581014!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d909e60697aeb%3A0x49b3bb03d712af8a!2s1675+N+Freedom+Blvd%2C+Provo%2C+UT+84604!5e0!3m2!1sen!2sus!4v1429288707842" width="100%" height="400" frameborder="0" style="border:0"></iframe>
+			</div>
+			<div class="col-sm-4 col-sm-offset-4">
+				<h2>Like what you see? Contact me</h2>
+			</div>
+			<div class="col-sm-3 col-sm-offset-2">
+				<h3>Phone Number</h3>
+				<h4>(804) 517-9080</h4>
+			</div>
+			<div class="col-sm-3">
+				<h3>Email Address</h3>
+				<h4>jared@worldtechacademy.com</h4>
+			</div>
+			<div class="col-sm-3">
+				<h3>Address</h3>
+				<h4>9341 Squirrel Tree Ct.</h4>
+				<h4>Chesterfield, VA 23838</h4>
+			</div>
+		</div>
+
+		<br><br><br>
+		<br><br><br>
+		<br><br><br>
+		<br><br><br>
+
+
+	
 <!--footer-->		
 	<div class="footer">
 		<div class="container">
@@ -197,8 +207,8 @@
 		</div>
 	</div>
 		
-		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>	
+		
+		
 	</body>
 </html>
 
