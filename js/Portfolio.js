@@ -15,10 +15,14 @@ $(document).ready( function () {
         this.imgRef = imgRef;
     };
 
-    var cpr = new Project('CPR Website', 'Description of the CPR Site Here', 'http://www.worldtechacademy.com', 'assets/CPRSiteScreenshot.jpg');
-    var cms = new Project('Mini-CMS', 'WordPress has nothing on this guy!', 'http://dight350.tardis-shoes.com/dewey/mini-cms/', 'assets/minicms.gif');
+    var cpr = new Project('CPR Website', 'Description of the CPR Site Here', 'http://www.worldtechacademy.com', 'assets/CPRSite.jpg');
+    var cms = new Project('Mini-CMS', 'WordPress has nothing on this guy!', 'http://dight350.tardis-shoes.com/dewey/mini-cms/', 'assets/cmsSite.jpg');
+    var moviePosterSite = new Project('Movie Poster Website', 'A cool and unique way to show off movie posters', 'http://dight250.tardis-shoes.com/deweys/movie-posters/index.html', 'assets/moviePosterSite.jpg');
+    var photoSite = new Project('Photo Gallery', 'My own photo gallery to organize my pictures', 'http://dight350.tardis-shoes.com/dewey/gallery/gallery.php', 'assets/photoSite.jpg');
+    var todoSite = new Project('To Do List', 'A custom built way to organize my day', 'http://dight350.tardis-shoes.com/dewey/todue/', 'assets/todoSite.jpg');
+    var wtaSite = new Project('World Tech Academy', 'Built a website for World Tech Academy, a local coding school', 'http://www.worldtechacademy.com/', 'assets/wtaSite.jpg');
 
-    var projectArray = [cpr, cms];
+    var projectArray = [cpr, cms, moviePosterSite, photoSite, todoSite, wtaSite];
 
     function processArray(project){
         var aTag = document.createElement("a");

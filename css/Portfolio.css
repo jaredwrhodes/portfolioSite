@@ -24,8 +24,8 @@
 	visibility: visible;
 	margin-bottom: 0px;
  	position: absolute;
- 	top: 67px;
-  	left: 181px;
+ 	top: 73px;
+  	left: 122px;
 }
 .caption2 h3 {
 	font-weight: bold;
@@ -65,8 +65,8 @@
 }
 
 .div2-home{
-	background-color: #E0E0FF;
-	height: 800px;
+	background-color: #334C4C;
+	height: 650px;
 	text-align: center;
 	font-family: helvetica;
 	color: black;
