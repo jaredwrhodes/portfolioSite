@@ -3,7 +3,30 @@
 	font-size: 14pt;
 	font-family: helvetica;
 }
+.thumbnail img{
+	opacity: .5;
+}
 
+.outer {
+	position: relative;
+	/*opacity: .7;*/
+}
+.caption {
+	visibility: hidden;
+	margin-bottom: 0px;
+ 	position: absolute;
+ 	top: 10px;
+}
+.caption2 {
+	visibility: visible !important;
+	margin-bottom: 0px;
+ 	position: absolute;
+ 	top: 10px;
+}
+
+/*.outer:hover{
+	visibility: visible;
+}*/
 
 .banner-style{
 	background-image: url("http://www.seetorontonow.com/App_Themes/tourismtoronto/images/about-tourism-toronto.jpg");

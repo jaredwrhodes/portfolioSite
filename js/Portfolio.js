@@ -1,47 +1,54 @@
-var userChoice = prompt("Do you choose rock, paper or scissors?");
 
-var computerChoice = Math.random();
+// el.addEventListener("mouseover", function(){
+//    var el = document..className = "caption2";
+// });
 
-if (computerChoice < 0.34) {
-    computerChoice = "Rock";
-} 
-else if(computerChoice <= 0.67) {
-    computerChoice = "Paper";
-} 
-else {
-    computerChoice = "Scissors";
-} console.log("Computer: " + computerChoice);
+// els.addEventListener("mouseout", function(){
+//     document.getElementsByClassName("inner").classList.remove("caption2");
+// });
+$(document).ready( function () {
 
-var compare = function(choice1 , choice2) {
-    if (choice1 === choice2) {
-        console.log( "The result is a tie!");
+    var Project = function(title, description, link, imgRef) {
+        this.title = title;
+        this.description = description;
+        this.link = link;
+        this.imgRef = imgRef;
+    };
+
+    var cpr = new Project('CPR Website', 'Description of the CPR Site Here', 'http://www.worldtechacademy.com', 'assets/CPRSiteScreenshot.jpg');
+    var cms = new Project('Mini-CMS', 'WordPress has nothing on this guy!', 'http://dight350.tardis-shoes.com/dewey/mini-cms/', 'assets/minicms.gif');
+
+    var projectArray = [cpr, cms];
+
+    function processArray(project){
+        var outerDIV = document.createElement("div");
+        outerDIV.className = 'col-md-4';
+        outerDIV.id = project.title + '-' + 'outer';
+        document.getElementById('firstRow').appendChild(outerDIV);
+
+        var middleDIV = document.createElement("div");
+        middleDIV.className = 'thumbnail';
+        middleDIV.id = project.title + '-' + 'middle';
+        document.getElementById(project.title + '-' +'outer').appendChild(middleDIV);
+
+        var imgTag = document.createElement("img");
+        imgTag.src = project.imgRef;
+        imgTag.id = project.title + '-' + 'img';
+        //imgTag.setAttribute("data-src", "holder.js/360x270");
+        document.getElementById(project.title + '-' +'middle').appendChild(imgTag);
+
+        var innerDIV = document.createElement("div");
+        innerDIV.className = 'caption';
+        innerDIV.id = project.title + '-' + 'inner';
+        innerDIV.innerHTML = '<h3>' + project.title + '</h3>';
+        document.getElementById(project.title + '-' +'middle').appendChild(innerDIV);
+
+        document.getElementById(project.title + '-' +'outer').addEventListener("mouseover", function(){
+           var el = document.getElementById(project.title + '-' +'inner').className = "caption2";
+        });
+        document.getElementById(project.title + '-' +'outer').addEventListener("mouseout", function(){
+           var el = document.getElementById(project.title + '-' +'inner').className = "caption";
+        });
     }
-    else if (choice1 === "Rock") {
-        if (choice2 === "Scissors") {
-            console.log( "Rock Wins");
-        }
-        else {
-            console.log( "Paper Wins");
-        };  
-    }
-    
-    else if (choice1 === "Paper") {
-        if (choice2 === "Rock") {
-            console.log( "Rock Wins");
-        }
-        else {
-            console.log( "Scissors Wins");
-        };  
-    }
-    
-    else if (choice1 === "Scissors") {
-        if (choice2 === "Rock") {
-            console.log( "Rock Wins");
-        }
-        else {
-            console.log( "Scissors Wins");
-        };  
-    }; 
-};
-
-compare(userChoice, computerChoice);0
+    projectArray.forEach(processArray);
+});
