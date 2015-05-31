@@ -15,7 +15,7 @@ $(document).ready( function () {
         this.imgRef = imgRef;
     };
 
-    var cpr = new Project('CPR Website', 'Description of the CPR Site Here', 'http://www.worldtechacademy.com', 'assets/CPRSite.jpg');
+    var cpr = new Project('CPR Website', 'Description of the CPR Site Here', 'http://www.worldtechacademy.com', 'assets/cprSite.jpg');
     var cms = new Project('Mini-CMS', 'WordPress has nothing on this guy!', 'http://dight350.tardis-shoes.com/dewey/mini-cms/', 'assets/cmsSite.jpg');
     var moviePosterSite = new Project('Movie Poster Website', 'A cool and unique way to show off movie posters', 'http://dight250.tardis-shoes.com/deweys/movie-posters/index.html', 'assets/moviePosterSite.jpg');
     var photoSite = new Project('Photo Gallery', 'My own photo gallery to organize my pictures', 'http://dight350.tardis-shoes.com/dewey/gallery/gallery.php', 'assets/photoSite.jpg');
@@ -31,12 +31,12 @@ $(document).ready( function () {
         document.getElementById('firstRow').appendChild(aTag);
 
         var outerDIV = document.createElement("div");
-        outerDIV.className = 'col-md-4 hvr-float-shadow';
+        outerDIV.className = 'hvr-float-shadow projectBackground';
         outerDIV.id = project.title + '-' + 'outer';
         document.getElementById(project.title + '-' +'link').appendChild(outerDIV);
 
         var middleDIV = document.createElement("div");
-        middleDIV.className = 'thumbnail';
+        //middleDIV.className = 'projectBackground';
         middleDIV.id = project.title + '-' + 'middle';
         document.getElementById(project.title + '-' +'outer').appendChild(middleDIV);
 
@@ -65,4 +65,27 @@ $(document).ready( function () {
         });
     }
     projectArray.forEach(processArray);
+
+    $("#projectScroll").click(function(){
+        $('html, body').animate({ scrollTop: $('#projectID').offset().top }, 'slow');
+
+    })
+
+    $("#contactScroll").click(function(){
+        $('html, body').animate({ scrollTop: $('#contactID').offset().top }, 'slow');
+
+    })
+
+    $('#map_canvas').addClass('scrolloff'); // set the pointer events to none on doc ready
+
+    $('#map').on('click', function () {
+        $('#map_canvas').removeClass('scrolloff'); // set the pointer events true on click
+    });
+
+    // you want to disable pointer events when the mouse leave the canvas area;
+
+    $("#map").mouseleave(function () {
+        $('#map_canvas').addClass('scrolloff'); // set the pointer events to none when mouse leaves the map area
+    });
+
 });

@@ -10,10 +10,40 @@
 	opacity: .2;
 }
 
+.projectBackground {
+	width: 30%;
+	display: inline-block;
+	background-color: white;
+  margin-top: 60px;
+  /* margin-left: 10%; */
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-left: 2.45%;
+  border-radius: 5px;
+}
+
+.contactContainer {
+	overflow:hidden
+}
 .outer {
 	position: relative;
 	/*opacity: .7;*/
 }
+
+#map {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+#firstRow {
+	margin-left: -2%;
+}
+
+.contactInfo {
+	overflow:hidden;
+	padding-bottom: 50px;
+}
+
 .caption {
 	visibility: hidden;
 	margin-bottom: 0px;
@@ -24,8 +54,10 @@
 	visibility: visible;
 	margin-bottom: 0px;
  	position: absolute;
- 	top: 73px;
-  	left: 122px;
+ 	top: 60px;
+	right: 30%;
+	left: 30%;
+	width: 40%;
 }
 .caption2 h3 {
 	font-weight: bold;
@@ -66,16 +98,26 @@
 
 .div2-home{
 	background-color: #334C4C;
-	height: 650px;
+	/*height: 650px;*/
 	text-align: center;
 	font-family: helvetica;
 	color: black;
-	background-size: 100%;
+	/*background-size: 100%;
 	background-repeat: no-repeat;
 	position: relative;
-	top: 0px;
+	top: 0px;*/
+	padding-bottom: 100px;
+	overflow:hidden
+
 }
 
+.navbar-brand h4 {
+	margin: 0;
+}
+
+#menuLinks {
+	margin-right: 50px;
+}
 .thumbnails{
 	height: 350px;
 }
@@ -95,10 +137,13 @@
 	color: black;
 }
 
+.scrolloff {
+	pointer-events: none;
+}
 
 .bioPic {
-	padding-bottom: 40px;
-	position: relative;
+	margin-bottom: 50px;
+	/*position: relative;*/
 	height: 311px;
 }
 
@@ -124,6 +169,7 @@
 }
 .picturebio {
 	position: absolute;
+	border-radius: 5px;
 }
 
 .footer{
@@ -182,4 +228,31 @@
   -webkit-transform: translateY(5px);
   transform: translateY(5px);
   /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
+}
+
+@media (max-width: 1400px) {
+	.projectBackground {
+		width: 47%;
+		display: inline-block;
+		background-color: white;
+		margin-top: 60px;
+		/* margin-left: 10%; */
+		padding-bottom: 30px;
+		padding-top: 30px;
+		margin-left: 2.45%;
+		border-radius: 5px;
+	}
+}
+
+@media (max-width: 950px) {
+	.projectBackground {
+		width: 80%;
+		display: inline-block;
+		background-color: white;
+		margin-top: 60px;
+		/* margin-left: 10%; */
+		padding-bottom: 30px;
+		padding-top: 30px;
+		border-radius: 5px;
+	}
 }

@@ -24,7 +24,7 @@
 
 <!--NavBar-->
 		<header id="mainMenu" class="navbar navbar-inverse navbar-fixed-top hero" role="banner">
-  		<div class="container">
+  		<div>
     		<div class="navbar-header">
 		      	<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
 			        <span class="icon-bar"></span>
@@ -38,12 +38,12 @@
     		<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       			<ul id="menuLinks" class="nav navbar-nav navbar-right">
         			<li>
-        				<a href="#">
+        				<a id="projectScroll" href="#">
           					Projects
           				</a>
         			</li>
         			<li>
-        				<a href="#">
+        				<a id="contactScroll" href="#">
           					Contact
           				</a>
         			</li>
@@ -62,20 +62,20 @@
   		</div>
 
 <!--Projects section-->
-  		<div class="div2-home">
+  		<div id="projectID" class="div2-home">
   		<br><br>
  
-  			<div id="firstRow" class="row">
+  			<div id="firstRow">
   				
 			</div>
 		</div>
 <!--Contact me information/google map api-->
-		<div class="row">	
+		<div class="contactContainer" >	
 			<div class="contactDiv">
 				
-				<div class="row">
+				<div >
 					<div id="map" style="height:400px;" class="col-sm-12">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.4589904291374!2d-77.5592659!3d37.35531499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b10ad30bccffbd%3A0x73fae4516271f393!2s9341+Squirrel+Tree+Ct%2C+Chesterfield%2C+VA+23838!5e0!3m2!1sen!2sus!4v1430451814858" width="100%" height="400" frameborder="0" style="border:0"></iframe>
+						<iframe id="map_canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3171.4589904291374!2d-77.5592659!3d37.35531499999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b10ad30bccffbd%3A0x73fae4516271f393!2s9341+Squirrel+Tree+Ct%2C+Chesterfield%2C+VA+23838!5e0!3m2!1sen!2sus!4v1430451814858" width="100%" height="400" frameborder="0" style="border:0"></iframe>
 					</div>
 
 				</div>
@@ -83,36 +83,36 @@
 				<br><br>
 
 
-				<div class="row">
-					<div class="col-sm-4 col-sm-offset-2 bioPic">
-						<img src="assets/Bio.jpg" class="picturebio">
-							<div >
-								<a href="https://www.facebook.com/jared.rhodes.359">
-									<i class="fa fa-facebook-square facebook"></i>
-								</a>
-								<a href="https://twitter.com/jaredwrhodes">
-									<i class="fa fa-twitter-square twitter"></i>
-								</a>
-								<a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile">
-									<i class="fa fa-linkedin-square linkedin"></i>
-								</a>
-							</div>
-					</div>
-					<div class="col-sm-3 col-sm-offset-1 ">
-						<h3><u>PHONE</u></h3>
-						<h5>(804) 517-9080</h5>
-					</div>
-					<div class="col-sm-3 col-sm-offset-1">
-						<h3><u>EMAIL</u></h3>
-						<h5>jared@worldtechacademy.com</h5>
-					</div>
-					<div class="col-sm-3 col-sm-offset-1">
-						<h3><u>ADDRESS</u></h3>
-						<h5>9341 Squirrel Tree Ct.</h5>
-						<h5>Chesterfield, VA 23838</h5>
-
-					</div>
+				
+				<div id="contactID" class="col-sm-4 col-sm-offset-2 bioPic">
+					<img src="assets/Bio.jpg" class="picturebio">
+						<div >
+							<a href="https://www.facebook.com/jared.rhodes.359">
+								<i class="fa fa-facebook-square facebook"></i>
+							</a>
+							<a href="https://twitter.com/jaredwrhodes">
+								<i class="fa fa-twitter-square twitter"></i>
+							</a>
+							<a href="https://www.linkedin.com/profile/public-profile-settings?trk=prof-edit-edit-public_profile">
+								<i class="fa fa-linkedin-square linkedin"></i>
+							</a>
+						</div>
 				</div>
+				<div class="col-sm-3 col-sm-offset-1 ">
+					<h3><u>PHONE</u></h3>
+					<h5>(804) 517-9080</h5>
+				</div>
+				<div class="col-sm-3 col-sm-offset-1">
+					<h3><u>EMAIL</u></h3>
+					<h5>jared@worldtechacademy.com</h5>
+				</div>
+				<div class="col-sm-3 col-sm-offset-1">
+					<h3><u>ADDRESS</u></h3>
+					<h5>9341 Squirrel Tree Ct.</h5>
+					<h5>Chesterfield, VA 23838</h5>
+
+				</div>
+			
 			</div>
 		</div>
 
@@ -120,7 +120,7 @@
 	
 <!--footer-->		
 	<div class="footer">
-		<div class="row">
+		<div >
 			<div class="container">
 				<div class="credits">
 					<div class="col-sm-4 col-sm-offset-3">
